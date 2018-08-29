@@ -1,12 +1,4 @@
 Par sitnih napomena u vezi projekta:
 
-- Za admin stranicu sam koristio šablon iz kursa koji ste poslali.
-
-- Koristio sam kriptovanje password-a kako bi što bolje upotpunio projekt. 
-
-- username: admin, password: admin omogucava logovanje. Stavio sam da možete da dodate user-a, da bi istestirali bolje projekat.
-
-- U opciji odbij u prikazu sastanaka sam stavio da se sastanak briše. Tako sam shvatio da je najbolje rješenje. Ukoliko ste Vi imali drugu ideju, možete mi predložiti Vaše rješenje da izmijenim.
-
- 
+- Ukoliko imate nekih primjedbi ili sugestija slobodno mi javite, da bih ispravio kod.
 
