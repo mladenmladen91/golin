@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 28, 2018 at 11:45 PM
+-- Generation Time: Aug 29, 2018 at 04:53 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -167,29 +167,28 @@ CREATE TABLE `offices` (
   `office_id` int(3) NOT NULL,
   `office_title` varchar(255) NOT NULL,
   `office_image` text NOT NULL,
-  `office_location` varchar(50) NOT NULL,
-  `office_index` int(3) NOT NULL
+  `office_location` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `offices`
 --
 
-INSERT INTO `offices` (`office_id`, `office_title`, `office_image`, `office_location`, `office_index`) VALUES
-(1, 'Podgorica', 'podgorica_color.png', 'offices_default emea', 1),
-(2, 'Belgrade', 'belgrade.png', 'offices_default emea', 1),
-(3, 'Brussels', 'brussels.png', 'offices_default emea', 1),
-(4, 'Bucharest', 'bucharest.png', 'offices_default emea', 1),
-(5, 'Hamburg', 'hamburg.png', 'offices_default emea', 1),
-(6, 'Istanbul', 'istanbul.png', 'offices_default emea', 1),
-(7, 'London', 'london.png', 'offices_default emea', 1),
-(8, 'Madrid', 'madrid.png', 'offices_default emea', 1),
-(9, 'Moscow', 'moscow.png', 'offices_default emea', 1),
-(10, 'Paris', 'paris.png', 'offices_default emea', 1),
-(11, 'Riga', 'riga.png', 'offices_default emea', 1),
-(12, 'Stockholm', 'stockholm.png', 'offices_default emea', 1),
-(13, 'Dubai', 'dubai.png', 'asia', 2),
-(16, 'New York', 'new_york.jpg', 'americas', 0);
+INSERT INTO `offices` (`office_id`, `office_title`, `office_image`, `office_location`) VALUES
+(1, 'Podgorica', 'podgorica_color.png', 'offices_default emea'),
+(2, 'Belgrade', 'belgrade.png', 'offices_default emea'),
+(3, 'Brussels', 'brussels.png', 'offices_default emea'),
+(4, 'Bucharest', 'bucharest.png', 'offices_default emea'),
+(5, 'Hamburg', 'hamburg.png', 'offices_default emea'),
+(6, 'Istanbul', 'istanbul.png', 'offices_default emea'),
+(7, 'London', 'london.png', 'offices_default emea'),
+(8, 'Madrid', 'madrid.png', 'offices_default emea'),
+(9, 'Moscow', 'moscow.png', 'offices_default emea'),
+(10, 'Paris', 'paris.png', 'offices_default emea'),
+(11, 'Riga', 'riga.png', 'offices_default emea'),
+(12, 'Stockholm', 'stockholm.png', 'offices_default emea'),
+(13, 'Dubai', 'dubai.png', 'asia'),
+(16, 'New York', 'new_york.jpg', 'americas');
 
 -- --------------------------------------------------------
 
@@ -301,7 +300,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `about_columns`
 --
 ALTER TABLE `about_columns`
-  MODIFY `about_column_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `about_column_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `about_content`
@@ -331,13 +330,13 @@ ALTER TABLE `header`
 -- AUTO_INCREMENT for table `meetings`
 --
 ALTER TABLE `meetings`
-  MODIFY `meet_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `meet_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `offices`
 --
 ALTER TABLE `offices`
-  MODIFY `office_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `office_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `pr`
