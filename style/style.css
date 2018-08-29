@@ -756,10 +756,13 @@ h1{
 .about_desc{
 	width: 100%;
 	display: block;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .about_desc_container{
 	width: 100% !important;
-	margin-bottom: .5rem;
+	margin: auto;
+    margin-bottom: .5rem;
 }
 .office_img_container{
     float: none !important;
