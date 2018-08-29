@@ -1,0 +1,71 @@
+:root{
+  --color-primary: rgba(31,31,31);
+  --color-secondary: rgba(255,198,39);
+}
+
+.meeting_form{
+    color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(47, 47, 47);
+	text-align: center;
+	border-radius: 5px; 
+	padding: 1.4rem;
+	width: 50%;
+	
+}
+.meeting_form input:focus{
+     outline: none;
+}
+.meeting_form > *{
+	padding: .8rem ;
+}
+
+.input-group{
+    margin: 0 auto;
+	width: 70%;
+	
+}
+
+
+.meeting_form_title span{
+	margin: auto;
+	color: white !important;
+	width: 80%;
+	font-size: 20px; ;
+    font-weight: bold;
+    
+}
+.input_fill{
+	text-align: center;
+	padding: .7rem;
+	border-radius: 10px;
+	width: 70%;
+    margin: auto;
+}
+#submit_btn{
+	color: var(--color-primary);
+	padding: 1rem; 
+	font-size: 1.01rem;
+	text-decoration: none;
+	background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 .1rem 1rem var(--color-primary);
+    border: none;
+    outline: none;
+    font-weight:bold;
+    margin: auto;
+    text-align: center;
+    
+}
+
+@media(max-width: 500px){
+    #submit_btn{
+        margin: auto;
+        width: 80%;
+        font-size: .7rem;
+        padding: .5rem .2rem;
+    }
+}
