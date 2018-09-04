@@ -44,7 +44,7 @@
         <input type="file" name="image">
     </div>
     <div class="form-group">
-        <label for="location">Sadržaj</label>
+        <label for="location">Lokacija</label>
         <select name="location" class="form-control">
             <option value="offices_default emea">Emea</option>
             <option value="americas">America</option>
