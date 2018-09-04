@@ -829,7 +829,7 @@ h1{
 
 @media(max-width: 420px){
 .header_schedule{
-   min-height: 100vh !important;        
+   min-height: 98vh !important;        
 }
 .office_img_container img{
    width: 100% !important;
