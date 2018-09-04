@@ -764,6 +764,10 @@ h1{
 	margin: auto;
     margin-bottom: .5rem;
 }
+.offices_container h1{
+    margin: auto;
+    margin-bottom: 2rem !important;
+}    
 .office_img_container{
     float: none !important;
      width: 100% !important;
@@ -792,7 +796,7 @@ h1{
 
 .img_name{
    left: 35% !important; 
-   top: 60%;    
+   top: 63%;    
 }    
 
 .contact_container{
@@ -815,7 +819,7 @@ h1{
 
 }
 
-@media(max-width: 380px){
+@media(max-width: 420px){
 
 .office_img_container img{
    width: 100% !important;
