@@ -121,7 +121,7 @@
 		<h1><?php echo $about_title2; ?></h1>
 		<p><?php echo $about_p1; ?></p>
 		<p><?php echo $about_p2; ?></p>
-		<p><?php echo $about_p3; ?>.</p>
+		<p><?php echo $about_p3; ?></p>
         <?php		 
 		   if(isset($_SESSION['username'])){
                echo "<p><a class='edit_about_link' href='admin/about_content.php?option=edit&ac_id=$about_content_id'>EDIT</a></p>";
