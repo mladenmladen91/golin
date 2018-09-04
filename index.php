@@ -190,14 +190,8 @@
     </div>
    </div>
    <div class="offices_img">
+      
        <?php
-          if(isset($_SESSION['username'])){
-        ?> 
-            <div class="offices_add">
-               <a class="office_new_column" href="admin/offices.php?option=add_new"><b>+</b></a>
-            </div>
-        <?php  }
-       
          //deleting selected office
          if(isset($_POST['office_submit'])){
                             $delete_id = $_POST['office_id'];
@@ -227,7 +221,7 @@
           ?>
    	   	  <p style="padding: .5rem;text-align:center;"><a class="edit_schedule_link" href="admin/offices.php?option=edit&office_id=<?php echo $office_id; ?>">EDIT</a></p>
    	   	  <p>
-   	   	       <form class="text-center" action="index.php" method="post">
+   	   	       <form class="office_form"  action="index.php" method="post">
                     <div class="form-group text-center">
                         <input type="hidden" name="office_id" value="<?php echo $office_id; ?>">
                         <input type="submit" style="border:none;cursor:pointer;" class="edit_schedule_link" name="office_submit" value="DELETE">
@@ -238,7 +232,13 @@
    	   	  <?php } ?>
    	   </div>
    	   <?php } ?>
-   	        
+   	    <?php
+          if(isset($_SESSION['username'])){
+        ?> 
+            <div class="offices_add">
+               <a class="office_new_column" href="admin/offices.php?option=add_new"><b>+</b></a>
+            </div>
+        <?php  } ?>     
    </div> 
    
 </section>

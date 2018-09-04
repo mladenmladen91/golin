@@ -38,7 +38,7 @@
  		    <input type="time" class="time" placeholder="00:00" name="time" value="<?php echo isset($_POST['time']) ? $_POST['time'] : ''  ?>">
  		</div>
  		<div class="input_group">
- 			<input type="submit" id="submit_btn" class="schedule-btn" value="ZAKAŽI SASTANAK" name="schedule">
+ 			<input type="submit" id="submit_btn" class="schedule-btn" value="ZAKAŽI" name="schedule">
  		</div>
         <!-- processing and validating data -->
  		<?php insertData(); ?>
