@@ -182,26 +182,26 @@ h1{
 }
 .header_schedule{
 	width: 100%;
-	height: 70vh;
+    min-height: 95vh;
 	border-bottom: 8vh solid var(--color-primary);
 	background-image: url(../img/fotka1.png);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom center; 
 	overflow: hidden;
 }
+
 .schedule{
 	overflow: hidden;
-    margin: 0 auto;
+    margin: auto;
 	width: 50%;
 	color: var(--color-primary);
-
 }
 .schedule_content{
 	float: left;
 	width: 50%;
 	padding: 1.5rem;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 .schedule_content > *{
 	margin: 1.5rem;
@@ -783,7 +783,8 @@ h1{
 .office_img_container img{
    width: 50%;
    height: 200px;    
-}    
+} 
+
 .offices_img{
 	display: block;
 	width: 80%;
@@ -827,7 +828,9 @@ h1{
 }
 
 @media(max-width: 420px){
-
+.header_schedule{
+   min-height: 100vh !important;        
+}
 .office_img_container img{
    width: 100% !important;
    height: 10rem;    

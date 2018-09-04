@@ -45,7 +45,14 @@
     </div>
     <div class="form-group">
         <label for="content">Sadržaj</label>
-        <textarea name="content" class="form-control"></textarea>
+        <textarea name="content" id="editor-add-column" class="form-control"></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor-add-column' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
     <div class="form-group">
         <input type="submit" name="add_column" value="Add Column" class="btn btn-primary">

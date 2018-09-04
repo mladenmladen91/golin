@@ -74,7 +74,7 @@
             ?>
  			<div class="schedule_content">
  				<h1><b><?php echo strtoupper($header_title); ?></b></h1>
- 				<p><?php echo $header_content." "; 
+ 				<p><?php echo $header_content; 
                      if(isset($_SESSION['username'])){
                          echo "<a class='edit_schedule_link' href='admin/header_content.php?option=edit&h_id=$header_id'>EDIT</a>";
                      }    

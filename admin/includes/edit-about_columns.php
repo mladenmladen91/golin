@@ -61,7 +61,14 @@
     </div>
     <div class="form-group">
         <label for="about_column_content">Sadržaj</label>
-        <textarea name="about_column_content" class="form-control"><?php echo $about_column_content; ?></textarea>
+        <textarea name="about_column_content" id="editor-column" class="form-control"><?php echo $about_column_content; ?></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor-column' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
    
     

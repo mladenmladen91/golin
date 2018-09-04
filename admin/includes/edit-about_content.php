@@ -60,15 +60,36 @@
     </div>
     <div class="form-group">
         <label for="about_p1">Sadržaj1</label>
-        <textarea name="about_p1" class="form-control"><?php echo $about_p1; ?></textarea>
+        <textarea name="about_p1" id="about_p1" class="form-control"><?php echo $about_p1; ?></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#about_p1' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
     <div class="form-group">
         <label for="about_p2">Sadržaj2</label>
-        <textarea name="about_p2" class="form-control"><?php echo $about_p2; ?></textarea>
+        <textarea name="about_p2" id="about_p2" class="form-control"><?php echo $about_p2; ?></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#about_p2' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
     <div class="form-group">
         <label for="about_p3">Sadržaj3</label>
-        <textarea name="about_p3" class="form-control"><?php echo $about_p3; ?></textarea>
+        <textarea name="about_p3" id="about_p3" class="form-control"><?php echo $about_p3; ?></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#about_p3' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
     
     <div class="form-group">

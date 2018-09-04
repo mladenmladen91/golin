@@ -63,7 +63,14 @@
     </div>
     <div class="form-group">
         <label for="pr_content">Sadržaj</label>
-        <textarea name="pr_content" class="form-control"><?php echo $pr_content; ?></textarea>
+        <textarea name="pr_content" id="pr_content" class="form-control"><?php echo $pr_content; ?></textarea>
+        <script>
+        ClassicEditor
+            .create( document.querySelector( '#pr_content' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
     </div>
     <div class="form-group">
         <label for="pr_image">Fotografija</label>
