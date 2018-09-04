@@ -753,6 +753,12 @@ h1{
 #clients{
 	background-size: cover;
 }
+   
+.clients_title h1{
+   padding: 0;
+    margin: auto;
+    width: 100%;
+}    
 .about_desc{
 	width: 100%;
 	display: block;
@@ -767,6 +773,7 @@ h1{
 .offices_container h1{
     margin: auto;
     margin-bottom: 2rem !important;
+    padding: 0;
 }    
 .office_img_container{
     float: none !important;
@@ -843,7 +850,7 @@ h1{
 
 .schedule-btn{
    font-size: .7rem !important;
-   padding: .3rem;
+   padding: .5rem;
 } 
 .schedule_content > *{
 	margin: 1rem;
