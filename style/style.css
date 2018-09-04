@@ -201,7 +201,7 @@ h1{
 	float: left;
 	width: 50%;
 	padding: 1.5rem;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 .schedule_content > *{
 	margin: 1.5rem;
@@ -705,7 +705,7 @@ h1{
 }
 .header_schedule{
 	background-size: cover;
-	height: 70vh;
+	min-height: 70vh;
 }
 .schedule{
 	width: 100%;
