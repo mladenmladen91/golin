@@ -75,7 +75,7 @@
                         <a href="pr.php">PR sadržaj</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demoOffice"><i class="fa fa-fw fa-arrows-v"></i>OFFICES SADRŽAJ<i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demoOffice"><i class="fa fa-fw fa-arrows-v"></i>Offices sadržaj<i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demoOffice" class="collapse">
                             <li>
                                 <a href="offices.php">Sve poslovnice</a>
@@ -87,7 +87,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="contact.php">KONTAKT</a>
+                        <a href="contact.php">Kontakt</a>
                     </li>
                 </ul>
             </div>
