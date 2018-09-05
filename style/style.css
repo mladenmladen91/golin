@@ -182,7 +182,7 @@ h1{
 }
 .header_schedule{
 	width: 100%;
-    min-height: 95vh;
+    min-height: 88vh;
 	border-bottom: 8vh solid var(--color-primary);
 	background-image: url(../img/fotka1.png);
 	background-size: cover;
@@ -830,7 +830,7 @@ h1{
 
 @media(max-width: 420px){
 .header_schedule{
-   min-height: 98vh !important;        
+   min-height: 80vh !important;        
 }
 .office_img_container img{
    width: 100% !important;
