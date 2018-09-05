@@ -44,14 +44,6 @@
     <div class="form-group">
         <label for="header_content">Sadržaj</label>
         <textarea name="header_content" id="header_content" class="form-control"><?php echo $header_content; ?></textarea>
-        <script>
-        ClassicEditor
-            .create( document.querySelector( '#header_content' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-        </script>
-        
     </div>
     
     <div class="form-group">
