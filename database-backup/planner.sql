@@ -108,7 +108,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `contact_address`, `contact_phone`, `contact_email`) VALUES
-(1, 'Bulevar Petra Cetinjskog 56 8100 Podgorica, Montenegro', '+382 223 240', 'info@amplitudo.me');
+(1, 'Neznanog junaka nn', '+382 000 000', 'info@info.com');
 
 -- --------------------------------------------------------
 
@@ -127,7 +127,7 @@ CREATE TABLE `header` (
 --
 
 INSERT INTO `header` (`header_id`, `header_title`, `header_content`) VALUES
-(1, 'Amplitudo  affiliate of golin', 'Amplitudo provides all kind of support.  provides all kind of support. ');
+(1, 'Golin  affiliate of golin', 'Golin provides all kind of support.  provides all kind of support. ');
 
 -- --------------------------------------------------------
 
