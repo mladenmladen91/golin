@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 29, 2018 at 04:53 PM
+-- Generation Time: Sep 29, 2018 at 08:43 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -75,20 +75,21 @@ INSERT INTO `about_content` (`about_content_id`, `about_title1`, `about_title2`,
 
 CREATE TABLE `clients` (
   `client_id` int(3) NOT NULL,
-  `client_image` text NOT NULL
+  `client_image` text NOT NULL,
+  `client_moto` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `clients`
 --
 
-INSERT INTO `clients` (`client_id`, `client_image`) VALUES
-(1, 'client1.png'),
-(2, 'client2.png'),
-(3, 'client3.png'),
-(5, 'client4.png'),
-(6, 'client5.png'),
-(7, 'client6.png');
+INSERT INTO `clients` (`client_id`, `client_image`, `client_moto`) VALUES
+(1, 'client1.png', 'mcdonald&#39;s: the strow'),
+(2, 'client2.png', 'mcdonald\'s: frork'),
+(3, 'client3.png', 'gunniess: made of more'),
+(5, 'client4.png', 'magnum: magnm x mochino'),
+(6, 'client5.png', 'gulden\'s: #defend the dog'),
+(7, 'client6.png', 'toblerone: the toblerone take');
 
 -- --------------------------------------------------------
 
@@ -108,7 +109,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `contact_address`, `contact_phone`, `contact_email`) VALUES
-(1, 'Neznanog junaka nn', '+382 000 000', 'info@info.com');
+(1, 'Bulevar Petra Cetinjskog 56 8100 Podgorica, Montenegro', '+382 223 240', 'info@amplitudo.me');
 
 -- --------------------------------------------------------
 
@@ -127,7 +128,7 @@ CREATE TABLE `header` (
 --
 
 INSERT INTO `header` (`header_id`, `header_title`, `header_content`) VALUES
-(1, 'Golin  affiliate of golin', 'Golin provides all kind of support.  provides all kind of support. ');
+(1, 'Amplitudo  affiliate of golin', 'Amplitudo provides all kind of support.  provides all kind of support. ');
 
 -- --------------------------------------------------------
 
@@ -151,11 +152,8 @@ CREATE TABLE `meetings` (
 --
 
 INSERT INTO `meetings` (`meet_id`, `meet_name`, `meet_company`, `meet_mail`, `meet_phone`, `meet_date`, `meet_time`, `meet_status`) VALUES
-(10, 'Ivana Stankovic', 'Poizment d.o.o', 'poizment@gmail.com', '+382456-987', '2018-08-24', '10:00:00', 'cekanje'),
-(11, 'Mladen Jelovac', 'Mladen L.T.D.', 'jelovacmladen@gmail.com', '+382456-987', '2018-08-29', '14:01:00', 'prihvacen'),
 (12, 'Jelena StojanoviÄ‡', 'ELEZ', 'jelena453@gmail.com', '+382456-987', '2018-08-30', '16:10:00', 'prihvacen'),
-(14, 'Mladen Jelovac', 'Mladen L.T.D.', 'jelovacmladen@gmail.com', '+382456-987', '2018-08-24', '01:00:00', 'cekanje'),
-(18, 'Dragana JovanoviÄ‡', 'JOVANE', 'jelovacmladen@gmail.com', '069/851-963', '2018-08-31', '13:01:00', 'cekanje');
+(14, 'Mladen Jelovac', 'Mladen L.T.D.', 'jelovacmladen@gmail.com', '+382456-987', '2018-08-24', '01:00:00', 'cekanje');
 
 -- --------------------------------------------------------
 
@@ -176,19 +174,19 @@ CREATE TABLE `offices` (
 
 INSERT INTO `offices` (`office_id`, `office_title`, `office_image`, `office_location`) VALUES
 (1, 'Podgorica', 'podgorica_color.png', 'offices_default emea'),
-(2, 'Belgrade', 'belgrade.png', 'offices_default emea'),
-(3, 'Brussels', 'brussels.png', 'offices_default emea'),
-(4, 'Bucharest', 'bucharest.png', 'offices_default emea'),
-(5, 'Hamburg', 'hamburg.png', 'offices_default emea'),
-(6, 'Istanbul', 'istanbul.png', 'offices_default emea'),
-(7, 'London', 'london.png', 'offices_default emea'),
-(8, 'Madrid', 'madrid.png', 'offices_default emea'),
-(9, 'Moscow', 'moscow.png', 'offices_default emea'),
-(10, 'Paris', 'paris.png', 'offices_default emea'),
-(11, 'Riga', 'riga.png', 'offices_default emea'),
-(12, 'Stockholm', 'stockholm.png', 'offices_default emea'),
-(13, 'Dubai', 'dubai.png', 'asia'),
-(16, 'New York', 'new_york.jpg', 'americas');
+(2, 'Belgrade', 'belgrade_color.png', 'offices_default emea'),
+(3, 'Brussels', 'brussels_color.jpg', 'offices_default emea'),
+(4, 'Bucharest', 'bucharest_color.jpg', 'offices_default emea'),
+(5, 'Hamburg', 'hamburg_color.jpg', 'offices_default emea'),
+(6, 'Istanbul', 'istanbul_color.jpg', 'offices_default emea'),
+(7, 'London', 'london_color.jpg', 'offices_default emea'),
+(8, 'Madrid', 'madrid_color.jpg', 'offices_default emea'),
+(9, 'Moscow', 'moscow_color.jpg', 'offices_default emea'),
+(10, 'Paris', 'paris_color.jpg', 'offices_default emea'),
+(11, 'Riga', 'riga_color.jpg', 'offices_default emea'),
+(12, 'Stockholm', 'stockholm_color.jpg', 'offices_default emea'),
+(13, 'Dubai', 'dubai_color.jpg', 'asia'),
+(18, 'Milano', 'milano_color.jpg', 'offices_default emea');
 
 -- --------------------------------------------------------
 
@@ -336,7 +334,7 @@ ALTER TABLE `meetings`
 -- AUTO_INCREMENT for table `offices`
 --
 ALTER TABLE `offices`
-  MODIFY `office_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `office_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `pr`
