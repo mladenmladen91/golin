@@ -185,7 +185,7 @@
 </section>
 <section class="offices_section" id="offices">
    <div class="offices_container">	
-	<h1>OFFICES</h1>
+       <div class="offices_title_container"><h1>OFFICES</h1></div>
     <div class="offices_location">
     	<a class="location_link location_active" href="#">EMEA</a>
     	<a class="location_link" href="#">AMERICAS</a>
