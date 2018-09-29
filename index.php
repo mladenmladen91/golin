@@ -53,13 +53,13 @@
 	     <?php 
              if(isset($_POST['edit_client'])){
                 $client_id = $_POST['client_id'];
-                         
+                $client_moto = filter_var($_POST['client_moto'], FILTER_SANITIZE_STRING);         
                 $client_image = $_FILES['client_image']['name'];
                          
                 $client_image_tmp = $_FILES['client_image']['tmp_name'];
                  
                 // function for updating images in clients section 
-                updateClientsImage($client_id,$client_image, $client_image_tmp);
+                updateClientsImage($client_id, $client_image, $client_moto, $client_image_tmp);
                          
             }
          
@@ -67,16 +67,19 @@
             $result3 = mysqli_query($connection, $query3);
             while($row = mysqli_fetch_assoc($result3)){
                $client_image = $row['client_image'];
-               $client_id = $row['client_id'];    
+               $client_id = $row['client_id'];
+               $client_moto = $row['client_moto'];    
          ?>
              
 	 	   <div class="img_container"><img height="160" width="200" src="img/<?php echo $client_image; ?>" alt="client-img">
+            <span class="client_moto"><?php echo strtoupper($client_moto); ?></span>   
 	 	  <?php if(isset($_SESSION['username'])){ ?>
 	 	    <div class="clients_edit_form">
 	 	        <form action="" method="post" enctype="multipart/form-data">
                    <div class="form-group">
-	 	              <input type="file" class="edit_schedule_link" name="client_image">
-	 	              <input type="hidden" name="client_id" value="<?php echo $client_id; ?>">
+	 	              <input type="text" name="client_moto" value="<?php echo $client_moto ?>"> 
+                       <input type="file" class="edit_schedule_link" name="client_image">
+                      <input type="hidden" name="client_id" value="<?php echo $client_id; ?>">
 	 	            </div>
 	 	            <div class="form-group">
 	 	              <input style="border:none" name="edit_client" value="Edit image" class="edit_schedule_link" type="submit" >
@@ -214,7 +217,7 @@
               $office_location = $row['office_location'];
        ?>     
    	   <div class="office_img_container <?php echo $office_location; ?>">
-   	   	  <img height="120" width="120" src="img/<?php echo $office_image; ?>" alt="office">
+   	   	  <img  height="120" width="120" src="img/<?php echo $office_image; ?>" alt="office">
    	   	  <span class="img_name"><?php echo strtoupper($office_title); ?></span>
    	   	  <?php
             if(isset($_SESSION['username'])){

@@ -26,7 +26,7 @@
                                        echo "<td>$office_location</td>";
                                        echo "<td><img height='40' width='40' src='../img/$office_image' alt='office_image'></td>";
                                        echo "<td ><a class='btn btn-primary' href='offices.php?option=edit&office_id=$office_id'>EDIT</a></td>";
-                                       echo "<td ><a class='btn btn-danger' href='offices.php?delete=$office_id'>DELETE</a></td>";     
+                                       echo "<td ><a class='btn btn-danger' onClick=\"return confirm('Da li ste sigurni?')\" href='offices.php?delete=$office_id'>DELETE</a></td>";     
                                       
                                     echo "</tr>";
                                      }

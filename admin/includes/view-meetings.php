@@ -20,7 +20,7 @@
        <input type="submit" name="search" class="btn btn-primary" value="Pretraži">
     </div> 
 </form>                          
- 
+ <div class="col-xs-12">
 <table class="table table-bordered table-hover printit" style="margin-top: 35px !important;">
                           
                         <thead>     
@@ -85,7 +85,7 @@
                                        echo "<td>$meet_date</td>";
                                        echo "<td>$meet_time</td>";
                                        echo "<td>$meet_status</td>";
-                                       echo "<td class='not_shown'><a class='btn btn-danger' href='meetings.php?option=odbij&meet_id=$meet_id'>ODBIJ</a></td>";
+                                       echo "<td class='not_shown'><a onClick=\"return confirm('Da li ste sigurni?')\" class='btn btn-danger' href='meetings.php?option=odbij&meet_id=$meet_id'>ODBIJ</a></td>";
                                          
                                       if($meet_status == 'cekanje'){     
                                         echo "<td class='not_shown'><a class='btn btn-primary' href='meetings.php?option=prihvati&meet_id=$meet_id'>PRIHVATI</a></td>";
@@ -97,7 +97,7 @@
                                 ?> 
                        </tbody>
 </table>
-                        
+</div>                       
                         
                         <?php
                              if(isset($_GET['option'])){

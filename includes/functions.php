@@ -49,7 +49,7 @@ function insertData(){
 }
 
 
-function updateClientsImage($client_id,$client_image, $client_image_tmp){
+function updateClientsImage($client_id, $client_image, $client_moto, $client_image_tmp){
       global $connection;
       move_uploaded_file($client_image_tmp,"img/$client_image");
                          
@@ -60,7 +60,7 @@ function updateClientsImage($client_id,$client_image, $client_image_tmp){
                              $client_image = $row['client_image'];
                          }
                          
-                         $query4 = "UPDATE clients SET client_image='$client_image' WHERE client_id=$client_id";
+                         $query4 = "UPDATE clients SET client_image='$client_image', client_moto='$client_moto' WHERE client_id=$client_id";
                          $result4 = mysqli_query($connection, $query4);
                          if(!$result4){
                              mysqli_error($connection);

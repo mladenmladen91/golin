@@ -53,10 +53,10 @@
             <a class="login_link" href="admin/">ADMIN</a>
             <a class="login_link" href="logout.php">ODJAVI ME</a>
  	    <?php } ?>   
- 		 <a href="#"><img src="img/fb.svg" height="14" width="14"></a>
- 		 <a href="#"><img src="img/twiter.svg" height="14" width="14"></a>
- 		 <a href="#"><img src="img/linkedin.svg" height="14" width="14"></a>
- 		 <a href="#"><img src="img/instagram.svg" height="14" width="14"></a>
+ 		 <a href="#"><img src="img/fb.svg" height="12" width="12"></a>
+ 		 <a href="#"><img src="img/twiter.svg" height="12" width="12"></a>
+ 		 <a href="#"><img src="img/linkedin.svg" height="12" width="12"></a>
+ 		 <a href="#"><img src="img/instagram.svg" height="12" width="12"></a>
  	    </div>
  	</div>
  	<!-- navigation including -->

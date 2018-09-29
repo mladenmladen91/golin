@@ -26,7 +26,7 @@
                                        echo "<td>$about_column_content</td>";
                                        echo "<td><img height='40' width='40' src='../img/$about_column_image' alt='column_image'></td>";
                                        echo "<td ><a class='btn btn-primary' href='about_column.php?option=edit&aco_id=$about_column_id'>EDIT</a></td>";
-                                       echo "<td ><a class='btn btn-danger' href='about_column.php?delete=$about_column_id'>DELETE</a></td>";     
+                                       echo "<td ><a class='btn btn-danger' onClick=\"return confirm('Da li ste sigurni?')\" href='about_column.php?delete=$about_column_id'>DELETE</a></td>";     
                                       
                                     echo "</tr>";
                                      }

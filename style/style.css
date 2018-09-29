@@ -12,6 +12,7 @@
 body{
 	font-family: 'Montserrat Regular', fira-sans; 
 	font-size: 68%;
+    font-weight: bold;
 }
 header{
 	width: 100%;
@@ -68,14 +69,14 @@ h1{
 .header_nav a{
 	line-height: 3rem;
 	height: 3rem;
-	padding: .3rem;
-	text-decoration: none;
+	padding: .3rem 0;
+    text-decoration: none;
 	color: var(--color-secondary);
 	position: relative;
 	text-align: center;
 }
 .header_nav a:not(:last-child){
-	padding-right: .5rem;
+	margin-right: .6rem;
 }
 .header_nav a::after{
 	content: "";
@@ -217,7 +218,7 @@ h1{
 	text-decoration: none;
 	background-color: var(--color-secondary);
     border-radius: 5px;
-    box-shadow: 0 .1rem 1rem var(--color-primary);
+    box-shadow: 0 .4rem black;
     border: none;
     outline: none;
     font-weight:bold;
@@ -340,9 +341,18 @@ h1{
 	width: 33%;
 	float: left;
 	padding: .8rem;
+    position: relative;
 }
 .img_container img{
    width: 100%;
+}
+.client_moto{
+    position: absolute;
+    left: 1.8rem;
+    top: 7.5rem;
+    font-weight: bold;
+    color: white;
+    font-size: .8rem;
 }
 .clients_slide_active{
 	clear: both;
@@ -485,7 +495,16 @@ h1{
     padding: .5rem;
     display: none;
 }
-
+.office_img_container img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter .5s;
+}
+.office_img_container img:hover{
+    -webkit-filter: none;
+    filter: none;
+    cursor: pointer;
+}
  .offices_default{
     display: block !important;
 } 
@@ -837,8 +856,11 @@ h1{
    height: 10rem;    
 }    
 .img_name{
-   left: 18% !important;        
+   left: 18% !important;    
 }
+.client_moto{
+   font-size: .4rem;        
+}    
 
 }
 
