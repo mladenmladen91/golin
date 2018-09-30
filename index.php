@@ -21,7 +21,7 @@
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $com_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $com_image; ?>" height="280" width="360" alt="image">
+			<img src="img/<?php echo $com_image; ?>" height="270" width="360" alt="image">
 		</div>
 		<div id="event" class="pr_management">
 		    <?php  
@@ -41,7 +41,7 @@
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $man_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $man_image; ?>" height="280" width="360" alt="image">
+			<img src="img/<?php echo $man_image; ?>" height="270" width="360" alt="image">
         </div>
 	</div>
 </section>
@@ -119,9 +119,9 @@
      
      ?>
 	<div class="about_content">
-		<img src="img/go-all-in.gif" height="70" width="160">
+		<img src="img/go-all-in.gif" height="70" width="220">
         <h1><b><?php echo strtoupper($about_title1); ?></b></h1>
-		<h1><?php echo $about_title2; ?></h1>
+		<h3><?php echo $about_title2; ?></h3>
 		<p><?php echo $about_p1; ?></p>
 		<p><?php echo $about_p2; ?></p>
 		<p><?php echo $about_p3; ?></p>

@@ -73,6 +73,7 @@ h1{
 	color: var(--color-secondary);
 	position: relative;
 	text-align: center;
+    font-weight: bold;
 }
 .header_nav a:not(:last-child){
 	margin-right: .6rem;
@@ -116,6 +117,7 @@ h1{
 	display: block;
 	text-align: center;
 	z-index: 600 !important;
+    font-weight: bold;
 }
 .responsive_nav a:hover{
 	color: white;
@@ -250,12 +252,13 @@ h1{
 .pr_communications_content{
 	float: left;
 	width: 50%;
-	font-size: .7rem;
+	font-size: .6rem;
 	padding: .8rem;
-    min-height: 8rem;
+    min-height: 12rem;
 }
 .pr_communications_content h1{
     font-weight: bold;
+    font-size: 1.4rem;
 }
 .pr_communications_content > *{
 	padding: .4rem;
@@ -279,13 +282,16 @@ h1{
 .pr_management_content{
 	float: right;
 	width: 50%;
-	font-size: .7rem;
+	font-size: .6rem;
 	padding: .8rem;
-    min-height: 8rem;
+    min-height: 12rem;
 }
 .pr_management_content > *{
 	padding: .4rem;
 	padding-left: 2rem;
+}
+.pr_management_content h1{
+    font-size: 1.4rem;
 }
 .pr_management img{
 	position: absolute;
@@ -485,7 +491,7 @@ h1{
 	font-size: 1.2rem;
 	margin: .8rem;
 	position: relative;
-    
+    font-weight: bold;
 }
 .location_active{
 	color: white;
@@ -577,6 +583,7 @@ h1{
 }
 .contact_content span{
     font-size: 1rem;
+    font-weight: 500;
 }
 .contact_content > *{
 	margin: .5rem;
@@ -584,13 +591,14 @@ h1{
 .contact_content_contact{
     font-size: 1.5rem;
 }
+
 .contact_container iframe{
 	position: absolute;
 	left: 27%;
 	bottom: -1.3rem;
 	z-index: 300;
 	overflow: visible !important;
-    border: 6px solid var(--color-secondary);
+    border: 2px solid var(--color-secondary) !important;
     width: 25%;
 }
 .contact_parent{
@@ -623,8 +631,9 @@ h1{
 .footer_link{
 	text-decoration: none;
 	color: white;
-	margin: .3rem;
+	margin: .2rem;
 	padding: .2rem;
+    font-weight: bold;
 }
 .footer_border{
 	border-right: 2px solid var(--color-secondary);
@@ -727,7 +736,15 @@ h1{
 	width: 45%;
 	float: right;
 }
-
+@media(min-width: 2400px){
+.header_schedule{
+    min-height: 70rem;        
+}
+    
+.pr_management{
+    padding: 4rem;         
+}    
+}
 @media(min-width: 1700px){
 
 .about_desc{
@@ -813,10 +830,10 @@ h1{
     
 .pr_management_content > *{
     padding: 0 !important;
-    margin: .5rem !important;
+    margin: .8rem !important;
 }  
 .pr_management_content h1{
-    margin-bottom: 1rem !important;         
+    margin-bottom: 1.5rem !important;         
 }    
 .pr_management img{
 	position: static;

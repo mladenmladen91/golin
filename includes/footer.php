@@ -11,7 +11,7 @@
 	   
 	   <div class="footer_copyright">
 	   	   <div class="footer_nav">
-			<span>&copy;2018 GOLIN PODGORICA. ALL RIGHTS RESERVED</span>
+			<span>&copy;2018 <b>GOLIN PODGORICA</b>. ALL RIGHTS RESERVED</span>
 		   </div>	
 		</div>
 	  </div>	

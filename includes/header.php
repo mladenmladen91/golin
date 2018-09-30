@@ -54,10 +54,10 @@
             <a class="login_link" href="admin/">ADMIN</a>
             <a class="login_link" href="logout.php">ODJAVI ME</a>
  	    <?php } ?>   
- 		 <a href="#"><img src="img/fb.svg" height="12" width="12"></a>
- 		 <a href="#"><img src="img/twiter.svg" height="12" width="12"></a>
- 		 <a href="#"><img src="img/linkedin.svg" height="12" width="12"></a>
- 		 <a href="#"><img src="img/instagram.svg" height="12" width="12"></a>
+ 		 <a href="#"><img src="img/fb.svg" height="10" width="10"></a>
+ 		 <a href="#"><img src="img/twiter.svg" height="10" width="10"></a>
+ 		 <a href="#"><img src="img/linkedin.svg" height="10" width="10"></a>
+ 		 <a href="#"><img src="img/instagram.svg" height="10" width="10"></a>
  	    </div>
  	</div>
  	<!-- navigation including -->
@@ -75,7 +75,7 @@
             ?>
  			<div class="schedule_content">
  				<h1 style="font-style:italic"><?php echo strtoupper($header_title); ?></h1>
- 				<p style="padding-bottom: 0;margin-bottom:0;"><?php echo $header_content; 
+ 				<p style="margin-bottom:2rem;"><?php echo $header_content; 
                      if(isset($_SESSION['username'])){
                          echo "<a class='edit_schedule_link' href='admin/header_content.php?option=edit&h_id=$header_id'>EDIT</a>";
                      }    
