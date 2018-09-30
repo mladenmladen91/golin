@@ -746,7 +746,9 @@ h1{
 }    
 }
 @media(min-width: 1700px){
-
+.header_schedule{
+    min-height: 50vh;        
+}
 .about_desc{
     width: 50%;        
 }
