@@ -765,7 +765,11 @@ h1{
         padding: 0;
     }
 }
-
+@media(max-width: 1300px){
+.about_desc_container{
+    margin: 1.4rem ;        
+}
+}
 @media(max-width: 1024px){
 
 .social_network{
