@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2018 at 08:43 PM
+-- Generation Time: Sep 30, 2018 at 06:52 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -40,10 +40,10 @@ CREATE TABLE `about_columns` (
 --
 
 INSERT INTO `about_columns` (`about_column_id`, `about_column_title`, `about_column_content`, `about_column_image`) VALUES
-(2, 'connectors', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'krug2.png'),
-(3, 'creators', 'testiramo navedeni sadrÅ¾aj', 'krug3.png'),
-(4, 'catalysts', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'krug4.png'),
-(5, 'creators', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'krug1.png');
+(2, 'explorers', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'krug1.png'),
+(3, 'creators', '<p>testiramo navedeni sadrÅ¾aj</p>', 'krug2.png'),
+(4, 'connectors', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'krug3.png'),
+(5, 'catalysts', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', 'krug4.png');
 
 -- --------------------------------------------------------
 
@@ -65,7 +65,7 @@ CREATE TABLE `about_content` (
 --
 
 INSERT INTO `about_content` (`about_content_id`, `about_title1`, `about_title2`, `about_p1`, `about_p2`, `about_p3`) VALUES
-(1, 'WE ARE THE RELEVANCE agency', 'We\'re relevance obsessed. More importantly, we\'re relevance equipped', 'We are an integrated agency with PR, Digital and Content at our core. Our ambition is to create change through brave, relevant work worthy of awe, action and awards.\r\nBy embracing new technologies and pushing creative boundries, we help our clients adapt and win in constantly evolving world', 'We are commited to delivering the deepiest insights, boldest ideas and broadest engagement to the world\'s leading brands through seamless integrated communications', 'We\'re the nice guys who kick ass all the time');
+(1, 'WE ARE THE RELEVANCE agency', 'We\'re relevance obsessed. More importantly, we\'re relevance equipped', '<p>We are an integrated agency with PR, Digital and Content at our core. Our ambition is to create change through brave, relevant work worthy of awe, action and awards. By embracing new technologies and pushing creative boundries, we help our clients adapt and win in constantly evolving world</p>', '<p>We are commited to delivering the deepiest insights, boldest ideas and broadest engagement to the world\'s leading brands through seamless integrated communications</p>', '<p>We\'re the nice guys who kick ass.</p>');
 
 -- --------------------------------------------------------
 
@@ -84,7 +84,7 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`client_id`, `client_image`, `client_moto`) VALUES
-(1, 'client1.png', 'mcdonald&#39;s: the strow'),
+(1, 'client1.png', 'mcdonald&#39;s: thestraw'),
 (2, 'client2.png', 'mcdonald\'s: frork'),
 (3, 'client3.png', 'gunniess: made of more'),
 (5, 'client4.png', 'magnum: magnm x mochino'),
@@ -128,7 +128,7 @@ CREATE TABLE `header` (
 --
 
 INSERT INTO `header` (`header_id`, `header_title`, `header_content`) VALUES
-(1, 'Amplitudo  affiliate of golin', 'Amplitudo provides all kind of support.  provides all kind of support. ');
+(1, 'Amplitudo  affiliate of golin', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 
 -- --------------------------------------------------------
 
@@ -206,8 +206,8 @@ CREATE TABLE `pr` (
 --
 
 INSERT INTO `pr` (`pr_id`, `pr_title`, `pr_content`, `pr_image`) VALUES
-(1, 'Pr and communications', 'Just testing some editing to see how this is will go here. Just testing some editing here and now however. testing this all the time.Just testing some editing here and now however. testing this all the time.Just testing some editing here and now however. testing this all the time. Test test', 'fotka2.png'),
-(2, 'Pr and management', 'We are provding management services to all our clients. ', 'fotka3.png');
+(1, 'Pr and communications', '<p>Just testing some editing to see how this is will go here. Just testing some editing here and now however. testing this all the time.Just testing some editing here and now however. testing this all the time.Just testing some editing here and now however. testing this all the time. Test test</p><p>Just testing some editing to see how this is will go here. Just testing some editing here and now however. testing this all the time.Just testing some editing here and now however. testing this all the time.</p>', 'fotka2.png'),
+(2, 'Pr and management', '<p>We are provding management services to all our clients. edhed ed ededje dejded e d ed ed ed edhehj de de4hdehded.de de d4dedekdnekdkedkekdkedned</p><p>edmemde dd jdjrf rfr gj t frj grj fr f rj frfrf verfrfrrrrrrrrrrrr rrrrrdrrrrrrrrr rrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.</p><p>frffffffffffffff fjer fjrfer frfjrf &nbsp;rjfrfjrjfjrjf3rj jrfjrf ferjfjrfjerjfjerjfjerfjrjf jdejde</p>', 'fotka3.png');
 
 -- --------------------------------------------------------
 
@@ -328,7 +328,7 @@ ALTER TABLE `header`
 -- AUTO_INCREMENT for table `meetings`
 --
 ALTER TABLE `meetings`
-  MODIFY `meet_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `meet_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `offices`

@@ -864,11 +864,7 @@ h1{
    margin-bottom: 1.1rem !important;
     padding: .3rem 0;
 }    
-.location_active::after{
-     left: 50%;
-    transform: translate(-50%,-50%);
-   
-}    
+    
 .img_container{
 	width: 100%;
 }
