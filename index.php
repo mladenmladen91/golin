@@ -14,14 +14,14 @@
                $com_image = $row['pr_image'];
             ?>
 			<div class="pr_communications_content">
-				<h1 style="font-style:italic"><?php echo strtoupper($com_title); ?></h1>
+				<h1 style="font-style:italic"><b><?php echo strtoupper($com_title); ?></b></h1>
 				<p><?php echo $com_content; ?></p>
                 
                 <?php if(isset($_SESSION['username'])): ?>
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $com_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $com_image; ?>" height="265" width="360" alt="image">
+			<img src="img/<?php echo $com_image; ?>" height="280" width="360" alt="image">
 		</div>
 		<div id="event" class="pr_management">
 		    <?php  
@@ -41,7 +41,7 @@
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $man_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $man_image; ?>" height="265" width="360" alt="image">
+			<img src="img/<?php echo $man_image; ?>" height="280" width="360" alt="image">
         </div>
 	</div>
 </section>
@@ -262,9 +262,9 @@
       ?>
 	   <div class="contact_content">
 		<h1 class="contact_content_contact">CONTACT</h1>
-		<h1><?php echo $contact_address; ?></h1>
-		<h1><?php echo $contact_phone; ?></h1>
-		<h1><?php echo $contact_email; ?></h1>
+		<span><?php echo $contact_address; ?></span><br>
+		<span><?php echo $contact_phone; ?></span><br>
+		<span><?php echo $contact_email; ?></span><br>
 		<?php if(isset($_SESSION['username'])){ ?> 
             <p>
                <a class="edit_about_link" href="admin/contact.php?option=edit&contact_id=1">EDIT</a>

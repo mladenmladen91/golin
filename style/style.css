@@ -10,8 +10,9 @@
 	
 }
 body{
-	font-family: 'Montserrat Regular', fira-sans; 
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 68%;
+    
 }
 header{
 	width: 100%;
@@ -21,7 +22,7 @@ section{
 	box-sizing: border-box;
 }
 h1{
-	font-family: 'Montserrat Black', fira-sans;
+	font-weight: bold;
 }
 .header_social{
 	background-color: var(--color-secondary);
@@ -251,7 +252,7 @@ h1{
 	width: 50%;
 	font-size: .7rem;
 	padding: .8rem;
-    min-height: 12rem;
+    min-height: 8rem;
 }
 .pr_communications_content h1{
     font-weight: bold;
@@ -279,8 +280,8 @@ h1{
 	float: right;
 	width: 50%;
 	font-size: .7rem;
-	padding: .4rem;
-    min-height: 12rem;
+	padding: .8rem;
+    min-height: 8rem;
 }
 .pr_management_content > *{
 	padding: .4rem;
@@ -557,7 +558,7 @@ h1{
 .contact_section{
 	color: var(--color-primary);
 	background-color: var(--color-secondary);
-    font-weight: bold !important;
+    min-height: 10rem;
 }
 .contact_container{
 	width: 50%;
@@ -571,12 +572,17 @@ h1{
 	padding: 2rem;
 	
 }
+.contact_content h1{
+    margin-bottom: 2rem;
+}
+.contact_content span{
+    font-size: 1rem;
+}
 .contact_content > *{
 	margin: .5rem;
 }
 .contact_content_contact{
     font-size: 1.5rem;
-    font-weight: bold;
 }
 .contact_container iframe{
 	position: absolute;
@@ -735,6 +741,11 @@ h1{
 }
     
 }
+@media(max-width: 1560px){
+    .pr_management{
+        padding: 0;
+    }
+}
 
 @media(max-width: 1024px){
 
@@ -799,9 +810,13 @@ h1{
 	display: block;
 	float: none;
 }
+    
 .pr_management_content > *{
     padding: 0 !important;
     margin: .5rem !important;
+}  
+.pr_management_content h1{
+    margin-bottom: 1rem !important;         
 }    
 .pr_management img{
 	position: static;
