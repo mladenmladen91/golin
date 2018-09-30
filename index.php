@@ -14,14 +14,14 @@
                $com_image = $row['pr_image'];
             ?>
 			<div class="pr_communications_content">
-				<h1><?php echo strtoupper($com_title); ?></h1>
+				<h1 style="font-style:italic"><?php echo strtoupper($com_title); ?></h1>
 				<p><?php echo $com_content; ?></p>
                 
                 <?php if(isset($_SESSION['username'])): ?>
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $com_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $com_image; ?>" height="240" width="350" alt="image">
+			<img src="img/<?php echo $com_image; ?>" height="265" width="360" alt="image">
 		</div>
 		<div id="event" class="pr_management">
 		    <?php  
@@ -34,14 +34,14 @@
                $man_image = $row2['pr_image'];
             ?>
 			<div class="pr_management_content">
-				<h1><?php echo strtoupper($man_title); ?></h1>
+				<h1 style="font-style:italic"><?php echo strtoupper($man_title); ?></h1>
 				<p><?php echo $man_content; ?></p>
                 
                 <?php if(isset($_SESSION['username'])): ?>
                    <p style="padding:1rem;"><a class="edit_link" href="admin/pr.php?option=edit&pr_id=<?php echo $man_id; ?>">EDIT</a></p>
                 <?php endif; ?>
             </div>
-			<img src="img/<?php echo $man_image; ?>" height="240" width="350" alt="image">
+			<img src="img/<?php echo $man_image; ?>" height="265" width="360" alt="image">
         </div>
 	</div>
 </section>
@@ -119,8 +119,8 @@
      
      ?>
 	<div class="about_content">
-		<img src="img/go-all-in.gif" height="55" width="140">
-		<h1><?php echo strtoupper($about_title1); ?></h1>
+		<img src="img/go-all-in.gif" height="70" width="160">
+        <h1><b><?php echo strtoupper($about_title1); ?></b></h1>
 		<h1><?php echo $about_title2; ?></h1>
 		<p><?php echo $about_p1; ?></p>
 		<p><?php echo $about_p2; ?></p>
@@ -157,8 +157,8 @@
               $about_column_image = $row['about_column_image'];
         ?>
 		<div class="about_desc_container">
-			<img src="img/<?php echo $about_column_image; ?>" width="50" height="50">
-			<h1><?php echo strtoupper($about_column_title); ?></h1>
+			<img src="img/<?php echo $about_column_image; ?>" width="70" height="70">
+			<h1 style="font-weight:bold"><b><?php echo strtoupper($about_column_title); ?></b></h1>
 			<p><?php echo $about_column_content; ?> </p>
 			<?php		 
 		   if(isset($_SESSION['username'])){
@@ -218,7 +218,7 @@
        ?>     
    	   <div class="office_img_container <?php echo $office_location; ?>">
    	   	  <img  height="120" width="120" src="img/<?php echo $office_image; ?>" alt="office">
-   	   	  <span class="img_name"><?php echo strtoupper($office_title); ?></span>
+   	   	  <span class="img_name"><b><?php echo strtoupper($office_title); ?></b></span>
    	   	  <?php
             if(isset($_SESSION['username'])){
           ?>
@@ -261,7 +261,7 @@
          $contact_email = $row['contact_email'];
       ?>
 	   <div class="contact_content">
-		<h1>CONTACT</h1>
+		<h1 class="contact_content_contact">CONTACT</h1>
 		<h1><?php echo $contact_address; ?></h1>
 		<h1><?php echo $contact_phone; ?></h1>
 		<h1><?php echo $contact_email; ?></h1>

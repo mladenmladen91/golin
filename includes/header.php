@@ -9,6 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width= device-width, initial-scale=1">
+   
     <link rel="stylesheet" type="text/css" href="style/style.css">
     
 	<title>Golin pg</title>
@@ -73,7 +74,7 @@
                
             ?>
  			<div class="schedule_content">
- 				<h1><b><?php echo strtoupper($header_title); ?></b></h1>
+ 				<h1 style="font-style:italic"><?php echo strtoupper($header_title); ?></h1>
  				<p style="padding-bottom: 0;margin-bottom:0;"><?php echo $header_content; 
                      if(isset($_SESSION['username'])){
                          echo "<a class='edit_schedule_link' href='admin/header_content.php?option=edit&h_id=$header_id'>EDIT</a>";
