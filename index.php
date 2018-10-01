@@ -168,7 +168,7 @@
                 <form action="index.php" method="post">
                     <div class="form-group">
                         <input type="hidden" name="about_column_id" value="<?php echo $about_column_id; ?>">
-                        <input type="submit" style="border:none;cursor:pointer;" class="edit_about_link" name="about_content_submit" value="DELETE">
+                        <button type="submit" style="border:none;cursor:pointer;" class="edit_about_link" name="about_content_submit" onClick="return confirm('Are you sure?')">DELETE</button>
                     </div>
                 </form>
             </p>  
@@ -227,7 +227,7 @@
    	   	       <form class="office_form"  action="index.php" method="post">
                     <div class="form-group text-center">
                         <input type="hidden" name="office_id" value="<?php echo $office_id; ?>">
-                        <input type="submit" style="border:none;cursor:pointer;" class="edit_schedule_link" name="office_submit" value="DELETE">
+                        <button type="submit" style="border:none;cursor:pointer;" class="edit_schedule_link" name="office_submit" onClick="return confirm('Are you sure?')">DELETE</button>
                     </div>
                 </form>
    	   	  </p>
